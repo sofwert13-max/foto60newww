@@ -1,0 +1,114 @@
+ 
+:root {
+  --bg-color: #F5F3EF;
+  --panel-bg: #FAF8F5;
+  --card-bg: #FFFFFF;
+  --text-main: #2C2A29;
+  --text-muted: #5C5854;
+  --text-light: #8F8A84;
+  --border-color: #E2DCD5;
+  --border-light: #ECE5DE;
+  --accent-bg: #2C2A29;
+  --accent-text: #FFFFFF;
+  --accent-hover: #4A4540;
+  --btn-outline-hover: #F0EAE4;
+  --danger-color: #B15E4A;
+  --success-color: #4A9D6F;
+  --poster-placeholder: #EFEAE4;
+}
+
+[data-theme="dark"] {
+  --bg-color: #181818;
+  --panel-bg: #222222;
+  --card-bg: #1E1E1E;
+  --text-main: #F0F0F0;
+  --text-muted: #B0B0B0;
+  --text-light: #888888;
+  --border-color: #333333;
+  --border-light: #2A2A2A;
+  --accent-bg: #F0F0F0;
+  --accent-text: #181818;
+  --accent-hover: #D0D0D0;
+  --btn-outline-hover: #2A2A2A;
+  --danger-color: #D67A66;
+  --success-color: #5FB380;
+  --poster-placeholder: #2A2A2A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: var(--text-main);
+  line-height: 1.4;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--panel-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-light);
+}
+
+/* Focus Styles */
+:focus-visible {
+  outline: 2px solid var(--accent-bg);
+  outline-offset: 2px;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

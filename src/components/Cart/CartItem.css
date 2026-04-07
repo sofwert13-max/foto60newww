@@ -1,0 +1,88 @@
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.9rem;
+}
+
+.cart-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.cart-item-info h4 {
+  margin: 0;
+  color: var(--text-main);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cart-item-price {
+  margin: 4px 0 0 0;
+  color: var(--text-light);
+  font-size: 0.8rem;
+}
+
+.cart-item-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--panel-bg);
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.qty-btn {
+  background: none;
+  border: none;
+  color: var(--text-main);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.qty-btn:hover {
+  color: var(--accent-hover);
+}
+
+.qty-input {
+  width: 40px;
+  border: none;
+  background: none;
+  text-align: center;
+  color: var(--text-main);
+  font-size: 0.9rem;
+}
+
+.qty-input:focus {
+  outline: none;
+}
+
+.cart-item-total {
+  min-width: 60px;
+  text-align: right;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove-btn:hover {
+  color: #B15E4A;
+}

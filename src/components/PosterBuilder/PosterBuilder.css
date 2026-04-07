@@ -1,0 +1,92 @@
+.poster-builder {
+  margin: 40px 0;
+  padding: 40px;
+  background: var(--panel-bg);
+  border-radius: 24px;
+  border: 1px solid var(--border-light);
+}
+
+.poster-builder h2 {
+  margin: 0 0 32px 0;
+  font-size: 1.5rem;
+}
+
+.builder-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.builder-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.control-group label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+
+.control-group textarea,
+.control-group input[type="color"],
+.control-group input[type="range"] {
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--text-main);
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.control-group textarea:focus,
+.control-group input:focus {
+  outline: none;
+  border-color: var(--text-main);
+}
+
+.size-display {
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+.upload-btn {
+  padding: 10px 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  color: var(--text-main);
+}
+
+.upload-btn:hover {
+  border-color: var(--text-main);
+}
+
+.builder-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .builder-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .poster-builder {
+    padding: 20px;
+  }
+}

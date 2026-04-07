@@ -1,0 +1,75 @@
+.review-form {
+  background: var(--panel-bg);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid var(--border-light);
+  margin-bottom: 24px;
+}
+
+.review-form h3 {
+  margin: 0 0 20px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: var(--text-main);
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--text-main);
+  font-family: inherit;
+  font-size: 0.9rem;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--text-main);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.star-rating {
+  display: flex;
+  gap: 8px;
+}
+
+.star-btn {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--text-light);
+  transition: all 0.2s;
+  padding: 4px;
+}
+
+.star-btn:hover,
+.star-btn.active {
+  color: #FFD700;
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .review-form {
+    padding: 16px;
+  }
+}

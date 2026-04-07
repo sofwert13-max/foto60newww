@@ -1,0 +1,75 @@
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--text-main);
+  font-family: inherit;
+  font-size: 0.9rem;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--text-main);
+}
+
+.form-group input::placeholder {
+  color: var(--text-light);
+}
+
+.checkout-summary {
+  background: var(--panel-bg);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  margin: 16px 0;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.summary-row.total {
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.shipping-info {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .checkout-summary {
+    padding: 12px;
+  }
+}
